@@ -28,7 +28,7 @@ def afk(update: Update, context: CallbackContext):
 
     sql.set_afk(update.effective_user.id, afk_time, reason)
     fname = update.effective_user.first_name
-    update.effective_message.reply_text("{} is now away!{}".format(fname, notice))
+    update.effective_message.reply_text("{} 𝑖𝑠 𝑛𝑜𝑤 𝑎𝑤𝑎𝑦! 𝐺𝑖𝑏 𝑝𝑎𝑤𝑟𝑖!{}".format(fname, notice))
 
 
 @run_async
@@ -46,18 +46,16 @@ def no_longer_afk(update: Update, context: CallbackContext):
         firstname = update.effective_user.first_name
         try:
             options = [
-                "{} damn... I saw you were online.. reading the messages.. but u were afk.",
-                "{} welcome back bro! No one missed you!",
-                "{} ahem! my love is here!!",
-                "{} welcome back, now pay 100$ or get banned!",
-                "Yamete...Yamete-kudasai {}-sama!",
-                "Oh my! {} got no chills!!",
-                "Spammer just arrived.. be ready everyone.. let me grab my ban-hammer!",
-                "Where is {}?\nIn the chat!",
-                "{} bruh you should delete your telegram account.",
-                "{} yess.. lets start trashing the chat!",
-                "{} welcome to hell again.",
-                "{} got a girlfriend! thats why he was afk.",
+                "{} 𝑑𝑎𝑚𝑛... 𝐼 𝑠𝑎𝑤 𝑦𝑜𝑢 𝑤𝑒𝑟𝑒 𝑜𝑛𝑙𝑖𝑛𝑒.. 𝑟𝑒𝑎𝑑𝑖𝑛𝑔 𝑡ℎ𝑒 𝑚𝑒𝑠𝑠𝑎𝑔𝑒𝑠.. 𝑏𝑢𝑡 𝑢 𝑤𝑒𝑟𝑒 𝐴𝐹𝐾.",
+                "{} 𝑤𝑒𝑙𝑐𝑜𝑚𝑒 𝑏𝑎𝑐𝑘 𝑏𝑟𝑜! 𝑁𝑜 𝑜𝑛𝑒 𝑚𝑖𝑠𝑠𝑒𝑑 𝑦𝑜𝑢!",
+                "{} 𝑤𝑒𝑙𝑐𝑜𝑚𝑒 𝑏𝑎𝑐𝑘, 𝑛𝑜𝑤 𝑝𝑎𝑦 100$ 𝑜𝑟 𝑔𝑒𝑡 𝑏𝑎𝑛𝑛𝑒𝑑",
+                "𝑌𝑎𝑚𝑒𝑡𝑒...𝑌𝑎𝑚𝑒𝑡𝑒 𝑘𝑢𝑑𝑎𝑠𝑎𝑖 {}-𝑠𝑎𝑚𝑎!",
+                "𝑜ℎ 𝑚𝑦! {} 𝑔𝑜𝑡 𝑛𝑜 𝑐ℎ𝑖𝑙𝑙𝑠!",
+                "𝑆𝑝𝑎𝑚𝑚𝑒𝑟 𝑗𝑢𝑠𝑡 𝑎𝑟𝑟𝑖𝑣𝑒𝑑.. 𝑏𝑒 𝑟𝑒𝑎𝑑𝑦 𝑒𝑣𝑒𝑟𝑦𝑜𝑛𝑒.. 𝑙𝑒𝑡 𝑚𝑒 𝑔𝑟𝑎𝑏 𝑚𝑦 𝑏𝑎𝑛-ℎ𝑎𝑚𝑚𝑒𝑟!",
+                "{} 𝑏𝑟𝑢ℎ 𝑦𝑜𝑢 𝑠ℎ𝑜𝑢𝑙𝑑 𝑑𝑒𝑙𝑒𝑡𝑒 𝑦𝑜𝑢𝑟 𝑡𝑒𝑙𝑒𝑔𝑟𝑎𝑚 𝑎𝑐𝑐𝑜𝑢𝑛𝑡.",
+                "{} 𝑦𝑒𝑠𝑠𝑠𝑠𝑠!!1 𝑙𝑒𝑡𝑠 𝑠𝑡𝑎𝑟𝑡 𝑡𝑟𝑎𝑠ℎ𝑖𝑛𝑔 𝑡ℎ𝑒 𝑐ℎ𝑎𝑡!",
+                "{} 𝑤𝑒𝑙𝑐𝑜𝑚𝑒 𝑡𝑜 ℎ𝑒𝑙𝑙 𝑎𝑔𝑎𝑖𝑛!!",
+                "{} 𝑔𝑜𝑡 𝑎 𝑔𝑖𝑟𝑙𝑓𝑟𝑖𝑒𝑛𝑑 𝑡ℎ𝑎𝑡𝑠 𝑤ℎ𝑦 ℎ𝑒 𝑤𝑎𝑠 𝐴𝐹𝐾!",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))

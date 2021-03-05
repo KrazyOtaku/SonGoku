@@ -5,8 +5,8 @@ from io import BytesIO
 from SonGokuRobot.modules.sql.users_sql import get_user_com_chats
 import SonGokuRobot.modules.sql.global_bans_sql as sql
 from SonGokuRobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN,
-                          SUDO_USERS, SUPPORT_CHAT, 
-                          SUPPORT_USERS,  WHITELIST_USERS,
+                          DRAGONS, SUPPORT_CHAT, 
+                          DEMONS,  WHITELIST_USERS,
                           spamwtc,
                           dispatcher)
 from SonGokuRobot.modules.helper_funcs.chat_status import (is_user_admin,
@@ -75,13 +75,13 @@ def gban(update: Update, context: CallbackContext):
         )
         return
 
-    if int(user_id) in SUDO_USERS:
+    if int(user_id) in  DRAGONS:
         message.reply_text(
             "I spy, with my little eye... a disaster! Why are you guys turning on each other?"
         )
         return
 
-    if int(user_id) in SUPPORT_USERS:
+    if int(user_id) in DEMONS:
         message.reply_text(
             "OOOH someone's trying to gban a Demon Disaster! *grabs popcorn*")
         return
@@ -212,7 +212,7 @@ def gban(update: Update, context: CallbackContext):
     else:
         send_to_list(
             bot,
-            SUDO_USERS + SUPPORT_USERS,
+            DRAGONS + DEMONS,
             f"Gban complete! (User banned in <code>{gbanned_chats}</code> chats)",
             html=True)
 

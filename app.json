@@ -12,17 +12,17 @@
       "TOKEN": {
          "description": "Your bot token. Get one from @BotFather duh",
          "required": true,
-         "value": ""
+         "value": "1419960076:AAE_2R3u0i3rD1Nxs_gXGBEra-QhUI9QxIM"
       },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "2530486"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": ""
+         "value": "532ad7e9f870d49b8fa02284119c35ca"
       },    
       "SQLALCHEMY_DATABASE_URI": {
          "description": "Your postgres sql db, empty this field if you dont have one.",
@@ -32,31 +32,31 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1234567890"
+         "value": "884031659"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "halfy"
+         "value": "Goku_kun"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "fateunion"
+         "value": "Goku_Support"
       },
       "MESSAGE_DUMP": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "-123456798"
+         "value": "-1001403508256"
       },
       "EVENT_LOGS": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "-123456798"
+         "value": "-1001342399214"
       },      
       "DEV_USERS": {
          "description": "ID of users who are Devs of your bot (can use /py etc.). If you are a noob and would come and bother Saitama support then keep the current ID's here at they are and add yours.",
          "required": false,
-         "value": "223"
+         "value": "825664681"
       }, 
       "STRICT_GBAN": {
          "description": "Enforce gbans across new groups as well as old groups. When a gbanned user talks, he will be banned.",
@@ -65,17 +65,17 @@
       "SUDO_USERS": {
          "description": "A space separated list of user IDs who you want to assign as sudo users.",
          "required": false,
-         "value": "133"
+         "value": "1288940468"
       },
       "SUPPORT_USERS": {
          "description": "A space separated list of user IDs who you wanna assign as support users(gban perms only).",
          "required": false,
-         "value": "133"
+         "value": "1591431487"
       },
       "WHITELIST_USERS": {
          "description": "A space separated list of user IDs who you want to assign as whitelisted - can't be banned with your bot.",
          "required": false,
-         "value": ""
+         "value": "867274418"
       },
       "ENV": {
          "description": "Setting this to ANYTHING will enable environment variables. Leave it as it is",
@@ -113,7 +113,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it linking to paul",
          "required": false,
-         "value": "https://www.paypal.me/UR"
+         "value": "https://www.paypal.me/PaulSonOfLars"
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
@@ -122,7 +122,8 @@
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
-         "value": ""
+         "value": "AAMCBAADGQEAAQh_4mBEWmxlDPy1n8c-TxTysh5t9T0UAAIdGAACP2OmEpiZ45-0cxJ6tEq9GgAEAQAHbQAD4EQAAh4E",
+    "file_unique_id": "AQADtEq9GgAE4EQAAg"
       }
    },
    "keywords": [
@@ -131,6 +132,6 @@
       "manager",
       "gokusupport"
    ],
-   "name": "saber",
-   "repository": "https://github.com/KrazyOtaku/SonGoku-"
+   "name": "SonGoku",
+   "repository": "https://github.com/KrazyOtaku/SonGoku"
 }
